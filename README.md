@@ -2,7 +2,7 @@
 
 ![Logo](Images/logo.png)
 
-My micro-RnD of MonoGame cross-platform Monogame-based sample integrated with PlayFab. UWP support planned
+My micro-RnD of MonoGame cross-platform Monogame-based sample integrated with PlayFab. UWP target added! :)
 
 ## Preface
 
