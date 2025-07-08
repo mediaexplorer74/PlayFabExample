@@ -1,4 +1,4 @@
-# PlayFabExample 1.0 ("Potential foe Everything" codename)
+# PlayFabExample 1.0 ("Potential for Anything" codename)
 
 ![Logo](Images/logo.png)
 
@@ -42,6 +42,8 @@ As is. No support. DIY. Learn purposes only.
 - https://github.com/dmanning23/PlayFabBuddy.Core Original PlayFabBuddy.Core library
 - https://learn.microsoft.com/en-us/windows/uwp/gaming/e2e Windows game development guide
 - https://playfab.com/ Azure PlayFab (complete backend solution for live games; free plan exists)
+- https://souleyedigitalmusic.bandcamp.com/track/potential-for-anything Potential for Anything
+(VVVVVV soundtrack by Magnus Pålsson)
 
 
 ## ..
