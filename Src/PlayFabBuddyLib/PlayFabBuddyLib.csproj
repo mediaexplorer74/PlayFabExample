@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{507FA155-F00D-49D1-B533-A8AD943A3326}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PlayFabBuddyLib</RootNamespace>
+    <AssemblyName>PlayFabBuddyLib</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.19041.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <PlatformTarget>ARM</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <PlatformTarget>ARM</PlatformTarget>
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM64'">
+    <PlatformTarget>ARM64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM64'">
+    <PlatformTarget>ARM64</PlatformTarget>
+    <OutputPath>bin\ARM64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="IPlayFabClient.cs" />
+    <Compile Include="PlayFabClient.cs" />
+    <Compile Include="PlayFab\IPlayFabPlugin.cs" />
+    <Compile Include="PlayFab\ISerializerPlugin.cs" />
+    <Compile Include="PlayFab\ITransportPlugin.cs" />
+    <Compile Include="PlayFab\Json\ISerializer.cs" />
+    <Compile Include="PlayFab\Json\NewtonsoftWrapper.cs" />
+    <Compile Include="PlayFab\Json\SimpleJson.cs" />
+    <Compile Include="PlayFab\PlayFabAdminAPI.cs" />
+    <Compile Include="PlayFab\PlayFabAdminInstanceAPI.cs" />
+    <Compile Include="PlayFab\PlayFabAdminModels.cs" />
+    <Compile Include="PlayFab\PlayFabApiSettings.cs" />
+    <Compile Include="PlayFab\PlayFabAuthenticationAPI.cs" />
+    <Compile Include="PlayFab\PlayFabAuthenticationContext.cs" />
+    <Compile Include="PlayFab\PlayFabAuthenticationInstanceAPI.cs" />
+    <Compile Include="PlayFab\PlayFabAuthenticationModels.cs" />
+    <Compile Include="PlayFab\PlayFabClientAPI.cs" />
+    <Compile Include="PlayFab\PlayFabClientInstanceAPI.cs" />
+    <Compile Include="PlayFab\PlayFabClientModels.cs" />
+    <Compile Include="PlayFab\PlayFabCloudScriptAPI.cs" />
+    <Compile Include="PlayFab\PlayFabCloudScriptInstanceAPI.cs" />
+    <Compile Include="PlayFab\PlayFabCloudScriptModels.cs" />
+    <Compile Include="PlayFab\PlayFabDataAPI.cs" />
+    <Compile Include="PlayFab\PlayFabDataInstanceAPI.cs" />
+    <Compile Include="PlayFab\PlayFabDataModels.cs" />
+    <Compile Include="PlayFab\PlayFabErrors.cs" />
+    <Compile Include="PlayFab\PlayFabEventsAPI.cs" />
+    <Compile Include="PlayFab\PlayFabEventsInstanceAPI.cs" />
+    <Compile Include="PlayFab\PlayFabEventsModels.cs" />
+    <Compile Include="PlayFab\PlayFabFileUtil.cs" />
+    <Compile Include="PlayFab\PlayFabGroupsAPI.cs" />
+    <Compile Include="PlayFab\PlayFabGroupsInstanceAPI.cs" />
+    <Compile Include="PlayFab\PlayFabGroupsModels.cs" />
+    <Compile Include="PlayFab\PlayFabHttp\IPlayFabHttp.cs" />
+    <Compile Include="PlayFab\PlayFabHttp\PlayFabHttp.cs" />
+    <Compile Include="PlayFab\PlayFabHttp\PlayFabSysHttp.cs" />
+    <Compile Include="PlayFab\PlayFabHttp\PlayFabWinHttp.cs" />
+    <Compile Include="PlayFab\PlayFabLocalizationAPI.cs" />
+    <Compile Include="PlayFab\PlayFabLocalizationInstanceAPI.cs" />
+    <Compile Include="PlayFab\PlayFabLocalizationModels.cs" />
+    <Compile Include="PlayFab\PlayFabMatchmakerAPI.cs" />
+    <Compile Include="PlayFab\PlayFabMatchmakerInstanceAPI.cs" />
+    <Compile Include="PlayFab\PlayFabMatchmakerModels.cs" />
+    <Compile Include="PlayFab\PlayFabMultiplayerAPI.cs" />
+    <Compile Include="PlayFab\PlayFabMultiplayerInstanceAPI.cs" />
+    <Compile Include="PlayFab\PlayFabMultiplayerModels.cs" />
+    <Compile Include="PlayFab\PlayFabProfilesAPI.cs" />
+    <Compile Include="PlayFab\PlayFabProfilesInstanceAPI.cs" />
+    <Compile Include="PlayFab\PlayFabProfilesModels.cs" />
+    <Compile Include="PlayFab\PlayFabServerAPI.cs" />
+    <Compile Include="PlayFab\PlayFabServerInstanceAPI.cs" />
+    <Compile Include="PlayFab\PlayFabServerModels.cs" />
+    <Compile Include="PlayFab\PlayFabSettings.cs" />
+    <Compile Include="PlayFab\PlayFabUtil.cs" />
+    <Compile Include="PlayFab\PluginContract.cs" />
+    <Compile Include="PlayFab\PluginManager.cs" />
+    <Compile Include="PlayFab\Qos\PlayFabQosApi.cs" />
+    <Compile Include="PlayFab\Qos\QosErrorCode.cs" />
+    <Compile Include="PlayFab\Qos\QosRegionResult.cs" />
+    <Compile Include="PlayFab\Qos\QosResult.cs" />
+    <Compile Include="PlayFab\Qos\RegionPinger.cs" />
+    <Compile Include="PlayFab\Uunit\PluginManagerTest.cs" />
+    <Compile Include="PlayFab\Uunit\tests\HttpTests.cs" />
+    <Compile Include="PlayFab\Uunit\tests\InstanceAuthTests.cs" />
+    <Compile Include="PlayFab\Uunit\tests\PlayFabApiTest.cs" />
+    <Compile Include="PlayFab\Uunit\tests\PlayFabQosApiTest.cs" />
+    <Compile Include="PlayFab\Uunit\tests\PlayFabServerApiTest.cs" />
+    <Compile Include="PlayFab\Uunit\UUnitAssertException.cs" />
+    <Compile Include="PlayFab\Uunit\UUnitIncrementalTestRunner.cs" />
+    <Compile Include="PlayFab\Uunit\UUnitTestCase.cs" />
+    <Compile Include="PlayFab\Uunit\UUnitTestContext.cs" />
+    <Compile Include="PlayFab\Uunit\UUnitTestReport.cs" />
+    <Compile Include="PlayFab\Uunit\UUnitTestSuite.cs" />
+    <Compile Include="PlayFab\WsaReflectionExtensions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\PlayFabBuddyLib.rd.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
+      <Version>6.2.14</Version>
+    </PackageReference>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
